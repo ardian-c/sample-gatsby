@@ -14,8 +14,6 @@ import { PrimaryButton } from '../../../common/components'
 import { HorizontalSpacer, SmallDeviceDisplayNone, DisplaySmallDevice } from '../../../common/elements'
 
 const videoUrl = `https://df13rcxn3mrxv.cloudfront.net/www/stryde-bike-playlist.m3u8`
-const localDevVideoUrl =
-  "https://katana-website-qa.s3.amazonaws.com/www/stryde-bike-playlist.m3u8"
 const videoOptions = {
   autoplay: true,
   loop: true,
@@ -24,7 +22,7 @@ const videoOptions = {
   // preload: true,
   sources: [
     {
-      src: localDevVideoUrl,
+      src: videoUrl,
       type: "application/x-mpegURL",
     },
   ],
