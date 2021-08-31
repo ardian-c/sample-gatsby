@@ -1,0 +1,77 @@
+{
+  "name": "katana-www",
+  "private": true,
+  "description": "Katana public WWW",
+  "version": "1.0.0",
+  "author": "Polymath Labs",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.0",
+    "@shopify/buy-button-js": "^1.0.4",
+    "babel-plugin-styled-components": "^1.11.1",
+    "bootstrap": "^4.4.1",
+    "date-fns": "^2.21.1",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "font-awesome": "^4.7.0",
+    "gatsby": "^2.32.8",
+    "gatsby-image": "^2.2.36",
+    "gatsby-plugin-env-variables": "^1.0.1",
+    "gatsby-plugin-facebook-pixel": "^1.0.3",
+    "gatsby-plugin-google-analytics": "^2.1.31",
+    "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-load-script": "^1.0.6",
+    "gatsby-plugin-manifest": "^2.2.33",
+    "gatsby-plugin-react-helmet": "^3.1.18",
+    "gatsby-plugin-sass": "^2.8.0",
+    "gatsby-plugin-sharp": "^2.3.7",
+    "gatsby-plugin-sitemap": "^2.2.24",
+    "gatsby-plugin-styled-components": "^3.3.10",
+    "gatsby-remark-images": "^3.1.37",
+    "gatsby-remark-relative-images": "^0.2.3",
+    "gatsby-source-filesystem": "^2.1.42",
+    "gatsby-source-wordpress": "^3.1.53",
+    "gatsby-source-yotpo": "^0.8.7",
+    "gatsby-transformer-remark": "^2.6.42",
+    "gatsby-transformer-sharp": "^2.3.9",
+    "node-sass": "^4.14.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1",
+    "react-slick": "^0.25.2",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^5.1.1",
+    "video.js": "^7.14.3"
+  },
+  "devDependencies": {
+    "@types/node": "^16.4.13",
+    "@types/react": "^17.0.16",
+    "@types/react-dom": "^17.0.9",
+    "@types/react-slick": "^0.23.5",
+    "@types/styled-components": "^5.1.12",
+    "@types/video.js": "^7.3.26",
+    "prettier": "^1.19.1",
+    "typescript": "^4.3.5"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "develop": "gatsby develop -H www-dev.stryde.co",
+    "start": "npm run develop",
+    "start:poll": "CHOKIDAR_USEPOLLING=true npm start",
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "type-check": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}

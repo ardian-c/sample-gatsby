@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30.63" height="30.63" viewBox="0 0 30.63 30.63">
+    <defs>
+        <style>
+            .cls-1{fill:#5874ea;stroke:#5874ea;stroke-width:.7px}
+        </style>
+    </defs>
+    <g id="Group_26" data-name="Group 26" transform="translate(.35 .35)">
+        <g id="Group_25" data-name="Group 25">
+            <path id="Path_30" d="M213.442 29.931h-2.208a.849.849 0 1 1 0-1.7h2.208a2.955 2.955 0 0 0 2.951-2.951V4.65a2.955 2.955 0 0 0-2.951-2.95h-12.749a.849.849 0 0 1 0-1.7h12.749a4.655 4.655 0 0 1 4.649 4.649v20.632a4.655 4.655 0 0 1-4.649 4.65z" class="cls-1" data-name="Path 30" transform="translate(-188.162 -.001)"/>
+            <path id="Path_31" d="M16.934 29.931H4.649A4.655 4.655 0 0 1 0 25.281V4.65A4.655 4.655 0 0 1 4.649 0H6.56a.849.849 0 0 1 0 1.7H4.649A2.955 2.955 0 0 0 1.7 4.65v20.631a2.955 2.955 0 0 0 2.951 2.951h12.283a.849.849 0 1 1 0 1.7z" class="cls-1" data-name="Path 31" transform="translate(0 -.001)"/>
+        </g>
+        <ellipse id="Ellipse_17" cx="1.903" cy="1.903" class="cls-1" data-name="Ellipse 17" rx="1.903" ry="1.903" transform="translate(21.482 5.612)"/>
+        <path id="Path_32" d="M127.958 153.957a7.958 7.958 0 1 1 7.959-7.957 7.967 7.967 0 0 1-7.959 7.957zm0-13.916a5.957 5.957 0 1 0 5.958 5.959 5.964 5.964 0 0 0-5.958-5.959z" class="cls-1" data-name="Path 32" transform="translate(-112.985 -129.971)"/>
+    </g>
+</svg>

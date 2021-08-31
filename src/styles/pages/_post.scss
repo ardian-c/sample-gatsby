@@ -1,0 +1,58 @@
+@import "./_home.scss";
+@import './media-queries.scss';
+@import './variables.scss';
+
+.post-section {
+    padding: 120px 0 120px 0;
+
+    h1 {
+        font-size: 60px;
+        font-weight: 500;
+        font-family: $muli-font;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.25;
+        letter-spacing: normal;
+        text-align: center;
+        color: #000000;
+    }
+
+    h2 {
+        font-size: 30px;
+        font-weight: 500;
+        font-family: $muli-font;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.25;
+        letter-spacing: normal;
+        color: #fcb335;
+    }
+
+    p {
+        font-size: 17px;
+        font-family: $muli-font;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.67;
+        letter-spacing: normal;
+    }
+
+    .wp-block-image {
+        text-align: center;
+    }
+
+    a {
+        color: #fcb335;
+        font-size: 28px;
+    }
+
+    img {
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+.more-link {
+    display: none;
+}

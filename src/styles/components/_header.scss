@@ -1,0 +1,261 @@
+@import "./media-queries.scss";
+@import './variables.scss';
+@import './mixins.scss';
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    padding: {
+        top: 0;
+        bottom: 3px;
+    }
+
+    @include break-point-range(320px, 991px) {
+        padding-bottom: 0;
+    }
+}
+
+.navbar-nav {
+    @include break-point-lower-than(991px) {
+        margin: 0;
+    
+    }
+}
+
+header {
+    background-color: $primary-bg-color;
+    z-index: 111
+}
+
+.nav-item {
+    @include break-point-lower-than(991px) {
+        display: flex;
+        justify-content: center;
+    }
+
+    p {
+        @include fontStyle(15.5px, normal, $muli-font, normal, normal);
+        line-height: 1.29;
+        padding-top: 20px;
+        letter-spacing: normal;
+        text-align: right;
+
+        @include break-point-lower-than(991px) {
+            display: none;
+        }
+    }
+
+    p:first-child {
+        color: $third-font-color;
+        margin-bottom: 5px;
+    }
+
+    p:last-child {
+        color: $secondary-font-color;
+        padding-top: 0;
+    }
+
+    .nav-link {
+        @include fontStyle(15px, 500, $muli-font, normal, normal);
+        line-height: 3.4;
+        letter-spacing: normal;
+        text-align: center;
+        color: $third-font-color;
+
+        @include break-point-higher-than(992px) {
+            line-height: 4.4;
+            font-size: 13px;
+        }
+
+        padding: {
+            left: 0 !important;
+            bottom: 0 !important;
+            right: 0 !important;
+        }
+
+        @include break-point-lower-than(991px) {
+            color: $primary-font-color;
+            font-size: 24px;
+            line-height: 1.6;
+        }
+    }
+
+    .active {
+        border-bottom: 3px solid $fifth-font-color;
+        color: $secondary-font-color !important;
+
+        @include break-point-lower-than(991px) {
+            border-bottom: 0;
+            color: #c6c8ff !important;
+            border-bottom: 3px solid #c6c8ff !important;
+        }
+    }
+
+    .btn-primary {
+        @include buttonStyle(144px, 48px, $secondary-button-bg-color, 5px, 1px solid $eighth-font-color, $muli-font);
+        @include fontStyle(15px, 800, $muli-font, normal, normal);
+        padding-top: 8px;
+        line-height: 2.33;
+        letter-spacing: 0.53px;
+        text-align: center;
+
+        @include break-point-lower-than(992px) {
+            display: none;
+        }
+
+        &:hover {
+            background-color: $primary-button-bg-color;
+            border: 1px solid $eighth-font-color;
+            color: $eighth-font-color;
+        }
+    }
+}
+
+.navbar-brand {
+    margin-right: 1px;
+
+    img {
+        width: 133px;
+        position: relative;
+        top: 27px;
+        height: auto;
+
+        @include break-point-lower-than(992px) {
+            padding-bottom: 13px;
+            position: relative;
+            left: 20px
+        }
+
+        @include break-point-range(320px, 374px) {
+            width: 90px;
+            left: 15px;
+        }
+    }
+}
+
+.mr-auto {
+    position: relative;
+    top: 17px;
+}
+
+.navbar-collapse {
+    background-color: $primary-bg-color;
+}
+
+@include break-point-lower-than(991px) {
+    .navbar-collapse {
+        background-color: #768ce8;
+        height: auto;
+    }
+
+    .nav-link {
+        line-height: 2
+    }
+}
+
+@include break-point-lower-than(992px) {
+    .nav-link {
+        margin: {
+            right: 7px !important;
+            left: 7px !important;
+        }
+    }
+
+    nav {
+        padding: {
+            left: 0 !important;
+            right: 0 !important;
+        }
+    }
+
+    .mobileLink {
+        display: block !important;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+
+        img {
+            position: relative;
+            top: -3px;
+        }
+    }
+}
+
+.navbar-toggler {
+    position: relative;
+
+    img {
+        position: relative;
+        top: 20px;
+        position: relative;
+
+        @include break-point-range(320px, 360px) {
+            left: 12px;
+        }
+    }
+}
+
+@include break-point-range(993px, 1200px) {
+    .nav-link {
+        margin-left: 0 !important;
+    }
+}
+
+.preOrder {
+    @include break-point-range(320px, 991px) {
+        text-align: right
+    }
+
+    p {
+        font-size: 13px;
+        color: $secondary-font-color;
+        text-align: right;
+        font-family: $muli-font;
+    }
+
+    ul {
+        display: flex;
+        margin-left: 0;
+        position: relative;
+        top: 9px;
+        margin: 0;
+
+        @include break-point-range(320px, 374px) {
+            left: 16px;
+        }
+
+        @include break-point-range(375px, 768px) {
+            left: 18px;
+        }
+
+        li {
+            @include fontStyle(13px, 500, $muli-font, normal, normal);
+            line-height: 1.23;
+            letter-spacing: normal;
+            text-align: right;
+            color: $secondary-font-color;
+            margin: 0;
+
+            @include break-point-lower-than(320px) {
+                font-size: 12px;
+            }
+
+            @include break-point-range(361px, 400px) {
+                img {
+                    padding-left: 7px;
+                    position: relative;
+
+                }
+            }
+        }
+
+        img {
+            padding-left: 7px;
+        }
+    }
+}

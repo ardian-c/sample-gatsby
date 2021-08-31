@@ -1,0 +1,222 @@
+@import "./_home.scss";
+@import './media-queries.scss';
+@import './variables.scss';
+@import './mixins.scss';
+
+.about-us-section {
+    padding: 180px 0 111px 0;
+
+    @include break-point-lower-than(991px) {
+        padding: 107px 0 63px 0;
+    }
+
+    h2 {
+        @include fontStyle(50px, 500, $muli-font, normal, normal);
+        line-height: 1.16;
+        letter-spacing: normal;
+        text-align: center;
+        color: $secondary-font-color;
+        padding-bottom: 89px;
+
+        @include break-point-range(320px, 991px) {
+            font-size: 18px;
+            padding-bottom: 25px;
+        }
+    }
+
+    h3 {
+        @include fontStyle(35px, 500, $muli-font, normal, normal);
+        line-height: 1.42;
+        letter-spacing: normal;
+        color: $secondary-font-color;
+        padding-bottom: 28px;
+
+        @include break-point-range(320px, 991px) {
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+
+    p {
+        @include fontStyle(17px, normal, $muli-font, normal, normal);
+        line-height: 1.67;
+        letter-spacing: normal;
+        color: $secondary-font-color;
+
+        @include break-point-range(320px, 991px) {
+            text-align: center;
+        }
+
+        span {
+            font-size: 24px;
+            text-align: center !important;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.16;
+            letter-spacing: normal;
+
+            @include break-point-range(320px, 991px) {
+                font-size: 18px;
+                text-align: center;
+            }
+        }
+    }
+
+    img {
+        text-align: center;
+        width: 100%;
+    }
+
+    .row {
+        margin-bottom: 85px;
+
+        @include break-point-range(320px, 991px) {
+            margin-bottom: 25px;
+        }
+    }
+
+    .card {
+        padding: 50px 21px 45px 43px;
+        height: auto;
+        width: 100%;
+        box-shadow: 3px 12px 20px 0 rgba(174, 183, 224, 0.18);
+        border: solid 1px rgba(198, 200, 255, 0.53);
+        background-color: $primary-bg-color;
+
+        .listcost1 {
+            padding-top: 85px;
+
+            .expencesItem {
+                position: relative;
+                top: -17px;
+            }
+
+            .salaryImg {
+                img {
+                    width: 50px;
+                }
+            }
+
+            .line {
+                img {
+                    width: 41px !important;
+                }
+            }
+        }
+
+        ul {
+            margin: 0;
+
+            li {
+                margin: 0;
+                font-size: 18px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.11;
+                letter-spacing: normal;
+                text-align: left;
+                color: #000000;
+                font-family: $muli-font;
+            }
+        }
+
+        .costImg {
+            img {
+                position: relative;
+                top: 3px;
+            }
+        }
+
+        h6 {
+            font-size: 19px;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.25;
+            letter-spacing: normal;
+            text-align: left;
+            color: #000000;
+            font-family: $muli-font;
+        }
+
+        p {
+            margin: 0;
+            font-size: 18px;
+            font-weight: 800;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.67;
+            letter-spacing: normal;
+            text-align: left;
+            color: #768ce8;
+            font-family: $muli-font;
+        }
+
+        .row {
+            margin-bottom: 0 !important;
+        }
+
+        img {
+            margin: 0;
+        }
+
+        .listcost2 {
+            padding-top: 32px;
+
+            .bikeCostItem {
+                position: relative;
+                top: -10px;
+            }
+        }
+
+        .listcost3 {
+            padding-top: 22px;
+        }
+    }
+
+    .mobileView {
+        .line {
+            display: none;
+        }
+
+        .costImg {
+            img {
+                position: relative;
+                top: 16px;
+            }
+        }
+
+        .expencesItem {
+            @include break-point-lower-than(991px) {
+                top: 0;
+            }
+        }
+
+        .listcost4 {
+            padding-top: 25px;
+        }
+
+        .card {
+            padding: 60px 50px 60px 50px;
+            margin-bottom: 45px;
+        }
+
+        .costImg2 {
+            img {
+                height: 100%;
+            }
+        }
+    }
+
+    @include break-point-lower-than(768px) {
+        .mobileView {
+            display: block;
+        }
+
+        .desktopView {
+            display: none;
+        }
+    }
+}

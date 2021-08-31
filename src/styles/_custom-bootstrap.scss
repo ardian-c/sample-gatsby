@@ -1,0 +1,22 @@
+// Brand Colors
+$theme-colors: ("primary-color": #0d2460,
+  "secondary-color": #3abb69,
+  "third-color": #67779c);
+
+$hr-border-color: #53658f;
+
+//container
+$container-max-width-xl: 1140px;
+$container-max-width-lg: 960px;
+$container-max-width-md: 720px;
+$container-max-width-sm: 540px;
+
+//font
+$font-family-base: "Nunito Sans";
+
+$container-max-widths: (sm: $container-max-width-sm,
+  md: $container-max-width-md,
+  lg: $container-max-width-lg,
+  xl: $container-max-width-xl);
+
+@import "node_modules/bootstrap/scss/bootstrap";

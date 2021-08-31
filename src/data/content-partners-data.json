@@ -1,0 +1,149 @@
+[
+    {
+        "id": "highRide",
+        "about": [
+            "Ride with High Ride - voted as the best fitness studio in Denver by ClassPass in 2019! At High Ride, we ride to the beat of the music while also cuing metrics like cadence and resistance.",
+            "We have developed our own signature ride, the High Ride, a combination of high-intensity cycling, isolated strength training & beat-based choreography. We incorporate different movements with each class, including push-ups, tap backs, side-to-sides, and four corners (and much more!) to isolate and strengthen specific muscle groups for a full body workout. In our rides you will hear a wide range of music - from latest pop hits to 80s to theme rides like British Invasion.",
+            "What sets our souls on fire is being able to share our rides with you, and bringing our boutique studio experience to the homes (and hearts) of America." 
+        ],
+        "backgroundImg": "contentPartners",
+        "logoImg": "highRide",
+        "locations": [
+            "1711 Sheridan Boulevard, Denver, CO, 80214"
+        ],
+        "name": "High Ride Cycle",
+        "ratings": {
+            "rideRate": 4.9,
+            "yelp": 5.0,
+            "google": 5.0
+        },
+        "testimonials": [
+            {
+                "description": "Best fitness class in Denver",
+                "author": "Men's Health Magazine"
+            }
+        ],
+        "states": [
+            "Denver, CO"
+        ],
+        "social": {
+            "facebook": "http://facebook.com/HighRideCycle/",
+            "instagram": "https://www.instagram.com/highridecycle/"
+        },
+        "studioUrl": "/studios",
+        "website": {
+            "name": "www.highridecycle.com",
+            "url": "https://www.highridecycle.com/"
+        }
+    },
+    {
+        "id": "primeCycle",
+        "about": [
+            "Prime Cycle is a cycling studio that gives you a full-body workout by incorporating cycling and choreographed rhythm riding. Our team will guide you through a 20, 30 or 45 min workouts that will PUSH you to your limits and work you to the core. Our rides include metrics cueing to ensure you are riding with the right amount of power in every pedal stroke."
+        ],
+        "backgroundImg": "contentPartners",
+        "locations": [
+            "70 Hudson St, Hoboken, NJ 07030"
+        ],
+        "logoImg": "primeCycleLogo",
+        "name": "Prime Cycle",
+        "ratings": {
+            "rideRate": 4.8,
+            "yelp": 4.5,
+            "google": 4.9
+        },
+        "testimonials": [
+            {
+                "description": "The team is incredible, the music is motivating, the class is challenging",
+                "author": "Danielle"
+            }
+        ],
+        "states": [
+            "Hoboken, NJ"
+        ],
+        "social": {
+            "facebook": "https://www.facebook.com/primecyclehoboken/",
+            "instagram": "https://www.instagram.com/primecycle/?hl=en"
+        },
+        "studioUrl": "/prime-cycle",
+        "website": {
+            "name": "www.primecycle.com",
+            "url": "https://www.primecycle.com/"
+        }
+    },
+    {
+        "id": "vibeRide",
+        "about": [
+            "Meet Vibe Ride - Atlanta's most dynamic fitness studio! We feature\nmetric-driven indoor cycling classes that are designed to\nprovide workouts that are the perfect combination of cardio\nand strength training. The classes are ideal for all fitness\nlevels; from beginners to more seasoned athletes, and each\ncoach will clearly explain the movements and form. You can\nlearn more about us at www.theviberide.com!"
+        ],
+        "backgroundImg": "contentPartners",
+        "locations": [
+            "950 W PEACHTREE ST NW, SUITE 225, ATLANTA, GA 30309",
+            "519 MEMORIAL DR SE, SUITE A09, ATLANTA, GA 30312",
+            "935 MARIETTA ST NW, ATLANTA GA , 30318",
+            "1026 RANDOLPH STREET, DETROIT, MI 48226"
+        ],
+        "logoImg": "vibeRideLogo",
+        "name": "Vibe Ride",
+        "ratings": {
+            "rideRate": 4.7,
+            "yelp": 4.5,
+            "google": 4.8
+        },
+        "testimonials": [
+            {
+                "description": "My favorite cycling place in Atlanta",
+                "author": " Lauren O."
+            }
+        ],
+        "states": [
+            "Atlanta, GA",
+            "Detroit, MI"
+        ],
+        "social": {
+            "facebook": "https://www.facebook.com/theviberide/",
+            "instagram": "https://www.instagram.com/theviberide/"
+        },
+        "studioUrl": "/vibe-ride",
+        "website": {
+            "name": "www.theviberide.com",
+            "url": "https://theviberide.com/"
+        }
+    },
+    
+    {
+        "id": "cityCycle",
+        "about": [
+            "City Cycle is a studio where you can come as you are and improve your mind, body, and soul. A place where as the lights go down and the music is turned up, everyone can be the best versions of themselves and have a little fun along the way. Music is the driving force behind every workout and the livelihood of City Cycle. The mesmerizing beats are a powerful tool that inspire us, motivate us, and allow us to let loose. Get ready to explode with energy to the beat of heart-pounding playlists!"
+        ],
+        "backgroundImg": "contentPartners",
+        "logoImg": "cityCycleLogo",
+        "locations": [
+            "117 NW 85th St Seattle WA 98117"
+        ],
+        "name": "City Cycle",
+        "ratings": {
+            "rideRate": 4.9,
+            "yelp": 5.0,
+            "google": 4.9
+        },
+        "testimonials": [
+            {
+                "description": "Their classes are upbeat, they challenge you and the instructors are always cheering you on - best cycle studio in the city!",
+                "author": "Connie D."
+            }
+        ],
+        "states": [
+            "Seattle, WA"
+        ],
+        "social": {
+            "facebook": "https://www.facebook.com/citycycleseattle/",
+            "instagram": "https://www.instagram.com/citycycleseattle/"
+        },
+        "studioUrl": "/city-cycle",
+        "website": {
+            "name": "citycycleseattle.com",
+            "url": "https://citycycleseattle.com/"
+        }
+    }
+]

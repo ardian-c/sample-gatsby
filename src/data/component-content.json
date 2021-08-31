@@ -1,0 +1,17 @@
+{
+  "header": {
+    "callToAction": "BUY NOW",
+    "buyNowMobile": "Buy Now",
+    "membershipOffer": "Limited time: $150 off",
+    "membershipText": "Membership optional",
+    "navigation": {
+      "app": "App",
+      "blog": "Blog",
+      "home": "Home",
+      "theBike": "The Bike",
+      "studios": "Studios",
+      "ourStory": "Our Story",
+      "faq": "FAQ"
+    }
+  }
+}

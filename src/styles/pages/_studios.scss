@@ -1,0 +1,400 @@
+@import "./_home.scss";
+@import "./media-queries.scss";
+@import "./variables.scss";
+
+.studios-section {
+    padding-top: 145px;
+    padding-bottom: 60px;
+
+    .redBikeLogo {
+        width: 115px !important;
+        height: 85px !important;
+    }
+
+    @include break-point-lower-than(768px) {
+        padding-top: 107px;
+    }
+
+    @include break-point-lower-than(768px) {
+        .next-studio-position-desktop {
+            top: -90%;
+            position: relative;
+        }
+    }
+    
+    .next-studio-position {
+        a {
+            @include fontStyle(24px, 500, $muli-font, normal, normal);
+            letter-spacing: normal;
+            text-align: right;
+            color: $tenth-font-color;
+        }
+
+        p {
+            color: $fourth-font-color;
+            font-size: 15px;
+            font-family: $muli-font;
+        }
+
+        ul {
+            color: $tenth-font-color;
+            display: -webkit-inline-box;
+            margin: 0;
+
+            li {
+                font-size: 24px;
+                font-family: $muli-font;
+
+                @include break-point-range(320px, 991px) {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    h1 {
+        @include fontStyle(60px, 500, $muli-font, normal, normal);
+        line-height: 0.83;
+        letter-spacing: normal;
+        text-align: center;
+        color: $secondary-font-color;
+
+        @include break-point-range(320px, 991px) {
+            font-size: 30px;
+            font-weight: bold;
+        }
+    }
+
+    p {
+        font: {
+            size: 28px;
+            stretch: normal;
+            style: normal;
+            family: $muli-font;
+        }
+
+        margin: 0;
+
+        @include break-point-range(320px, 991px) {
+            font-size: 18px;
+        }
+    }
+
+    .carousel-indicators {
+        bottom: 41px;
+
+        .active {
+            div {
+                height: 19px;
+                width: 19px;
+                opacity: 0.34;
+                box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+                background-color: $primary-bg-color;
+                border-radius: 50%;
+                position: relative;
+                right: 5px;
+                top: -5px;
+            }
+        }
+
+        li {
+            border-radius: 100%;
+            width: 9px;
+            font-family: $muli-font;
+            height: 9px;
+            opacity: 1 !important;
+            background-color: $primary-bg-color;
+        }
+    }
+
+    .card {
+        background-color: $secondary-bg-color;
+        border: 0;
+        position: relative;
+        top: -9%;
+        border-radius: 0;
+        z-index: 1;
+        width: 396px;
+        margin: 0 auto;
+        border-radius: 0;
+        box-shadow: -10px 20px 30px 0 rgba(80, 87, 139, 0.24);
+        border: 0;
+
+        @include break-point-range(320px, 991px) {
+            top: 10%;
+            width: 100%;
+        }
+
+        ul {
+            display: flex;
+            margin: 0;
+            justify-content: center;
+        }
+
+        .gatsby-image-wrapper {
+            margin: 20px auto;
+            text-align: center;
+            background-color: $secondary-bg-color;
+        }
+
+        .card-body {
+            padding-top: 0;
+            border: 0;
+            border-radius: 0;
+
+            .container {
+                padding: 0;
+            }
+
+            img {
+                width: 50px;
+                height: 24px;
+                border-radius: 0;
+            }
+
+            h2 {
+                @include fontStyle(36px, normal, $muli-font, normal, normal);
+                line-height: 0.6;
+                letter-spacing: normal;
+                text-align: center;
+                color: $primary-font-color;
+
+                @include break-point-range(320px, 991px) {
+                    font-size: 23px;
+                }
+            }
+
+            i {
+                width: 10px;
+                height: 9.5px;
+                color: $seventh-font-color;
+                font-size: 13px;
+
+                @include break-point-range(320px, 991px) {
+                    width: 7px;
+                    height: 9.5px;
+                    color: $seventh-font-color;
+                    font-size: 11px;
+                }
+            }
+        }
+
+        .card-footer {
+            background-color: $primary-bg-color !important;
+            border: 0;
+            border-radius: 0;
+            padding-right: 32px;
+            padding-left: 32px;
+
+            img {
+                border-radius: 0 !important;
+                background-color: transparent !important;
+                height: 35px !important;
+                width: 35px !important;
+                top: 0 !important;
+            }
+
+            h6 {
+                @include fontStyle(15px, bold, $muli-font, normal, normal);
+                line-height: 2.33;
+                letter-spacing: 0.53px;
+                text-align: left;
+                color: $fourth-font-color !important;
+            }
+
+            i {
+                color: $tenth-font-color;
+                font-size: 25px;
+                margin-left: 20px;
+            }
+
+            p {
+                @include fontStyle(18px, normal, $muli-font, normal, normal);
+                padding-bottom: 0 !important;
+                line-height: 1.56;
+                letter-spacing: normal;
+                text-align: left;
+                color: $secondary-font-color !important;
+
+                span {
+                    color: $gray-color !important;
+                }
+            }
+
+            .btn-primary {
+                border-radius: 5px;
+                background-color: #ffba43;
+                border: 1px solid $seventh-font-color;
+
+                &:hover {
+                    background-color: $primary-button-bg-color;
+                    border: 1px solid $seventh-font-color;
+                    color: $seventh-font-color !important;
+                }
+            }
+        }
+    }
+
+    .about-studio-section {
+        .next-studio-position {
+            p {
+                color: $fourth-font-color;
+                font-size: 15px;
+                font-family: $muli-font;
+
+                @include break-point-range(320px, 991px) {
+                    font-size: 18px;
+                }
+            }
+
+            ul {
+                color: $tenth-font-color;
+                display: -webkit-inline-box;
+                margin: 0;
+
+                li {
+                    font-size: 24px;
+                    font-family: $muli-font;
+
+                    @include break-point-range(320px, 991px) {
+                        font-size: 18px;
+                    }
+
+                    a {
+                        @include break-point-lower-than(768px) {
+                            font-size: 15px;
+                        }
+
+                        img {
+                            @include break-point-lower-than(768px) {
+                                font-size: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        h3 {
+            @include fontStyle(50px, 500, $muli-font, normal, normal);
+            margin-top: 86px;
+            line-height: 0.9;
+            letter-spacing: normal;
+            text-align: left;
+            padding-bottom: 10px;
+            color: $secondary-font-color;
+
+            @include break-point-range(320px, 991px) {
+                font-size: 30px;
+                text-align: center;
+            }
+        }
+
+        h5 {
+            @include fontStyle(24px, 500, $muli-font, normal, normal);
+            padding-bottom: 20px;
+            line-height: 0.9;
+            letter-spacing: normal;
+            text-align: left;
+            color: $secondary-font-color;
+
+            @include break-point-range(320px, 991px) {
+                font-size: 18px;
+                text-align: center;
+            }
+        }
+
+        .card {
+            p {
+                @include fontStyle(18px, normal, $muli-font, normal, normal);
+                line-height: 1.5;
+                letter-spacing: normal;
+                text-align: left;
+                color: $secondary-font-color;
+                padding-bottom: 10px !important;
+            }
+        }
+
+        .about-studios {
+            .titleStudio {
+                @include break-point-lower-than(992px) {
+                    margin-top: 140px;
+                }
+            }
+
+            p {
+                @include fontStyle(18px, normal, $muli-font, normal, normal);
+                line-height: 1.67;
+                letter-spacing: normal;
+                text-align: left;
+                color: $secondary-font-color;
+                padding-bottom: 20px;
+
+                @include break-point-lower-than(992px) {
+                    text-align: center;
+                }
+
+                span {
+                    @include fontStyle(15px, bold, $muli-font, normal, normal);
+                    line-height: 2.33;
+                    letter-spacing: 0.53px;
+                    text-align: left;
+                    color: $fourth-font-color;
+                    padding-bottom: 0 !important;
+                }
+            }
+
+            h3 {
+                @include fontStyle(50px, 500, $muli-font, normal, normal);
+                line-height: 0.9;
+                letter-spacing: normal;
+                text-align: left;
+                color: $secondary-font-color;
+
+                @include break-point-lower-than(992px) {
+                    font-size: 28px;
+                    text-align: center !important;
+                }
+            }
+        }
+    }
+
+    .carousel-item {
+        height: 611px;
+
+        @include break-point-lower-than(991px) {
+            height: auto;
+        }
+
+        .gatsby-image-wrapper {
+            position: relative;
+            top: -25%;
+            object-fit: cover;
+
+            @include break-point-lower-than(991px) {
+                object-fit: cover;
+            }
+        }
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+
+    .rotate {
+        transform: rotate(180deg);
+        margin: 1px 0px 9px 5px;
+
+        img {
+            position: relative;
+            left: 6px;
+        }
+    }
+
+    .d-none-mobile {
+        @include break-point-lower-than(991px) {
+            display: none;
+        }
+    }
+}

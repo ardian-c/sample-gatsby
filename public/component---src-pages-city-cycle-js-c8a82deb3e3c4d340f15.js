@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{abUQ:function(a,t,n){"use strict";n.r(t);var e=n("q1tI"),r=n.n(e),c=n("TkH4");t.default=function(a){var t=a.data;return r.a.createElement(c.a,{data:t,partnerId:"cityCycle"})}}}]);
+//# sourceMappingURL=component---src-pages-city-cycle-js-c8a82deb3e3c4d340f15.js.map

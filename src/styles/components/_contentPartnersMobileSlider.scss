@@ -1,0 +1,144 @@
+@import "./media-queries.scss";
+@import './variables.scss';
+@import './mixins.scss';
+
+.studios-slider {
+    width: 100%;
+    .slick-slide {
+        padding-top: 0 !important;
+    }
+
+    .content-partners-title {
+        p {
+            @include fontStyle(22px, 500, $muli-font, normal, normal);
+            line-height: 2.18;
+            letter-spacing: normal;
+            text-align: center;
+            color: $sixth-font-color;
+        }
+    }
+
+    .card {
+        background-color: $secondary-bg-color;
+        border: 0;
+        border-radius: 0;
+        z-index: 1;
+        right: 0 !important;
+        margin-left: 0px !important;
+        width: 100% !important;
+        position: relative !important;
+        top: 10px !important;
+        margin: 0 auto;
+        border-radius: 0;
+        box-shadow: -10px 20px 30px 0 rgba(80, 87, 139, 0.24);
+        border: 0;
+
+        .classPassImg {
+            width: 34px !important;
+            height: 36px !important;
+        }
+
+        @include break-point-lower-than(768px) {
+            position: relative;
+            top: 27px;
+            width: 100%;
+        }
+
+        img {
+            width: 107px;
+            height: 87px;
+            margin: 0 auto;
+            margin-top: 12px;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .card-body {
+            padding-top: 0;
+            border: 0;
+            border-radius: 0;
+
+            .container {
+                padding: 0;
+            }
+
+            img {
+                width: 62px;
+                height: 36px;
+                border-radius: 0;
+            }
+
+            h2 {
+                @include fontStyle(36px, normal, $muli-font, normal, normal);
+                line-height: 0.6;
+                letter-spacing: normal;
+                text-align: center;
+                color: $primary-font-color;
+
+                @include break-point-lower-than(320px) {
+                    font-size: 23px;
+                }
+            }
+
+            i {
+                width: 10px;
+                height: 9.5px;
+                color: $seventh-font-color;
+                font-size: 15px;
+
+                @include break-point-lower-than(320px) {
+                    width: 7px;
+                    height: 9.5px;
+                    color: $seventh-font-color;
+                    font-size: 11px;
+                }
+            }
+
+
+        }
+
+        .card-footer {
+            background-color: $primary-bg-color !important;
+            padding-bottom: 35px;
+            border: 0;
+            border-radius: 0;
+
+            h6 {
+                @include fontStyle(15px, bold, $muli-font, normal, normal);
+                line-height: 2.33;
+                letter-spacing: 0.53px;
+                text-align: left;
+                color: $fourth-font-color;
+            }
+
+            i {
+                color: $tenth-font-color;
+                font-size: 25px;
+                margin-left: 20px;
+            }
+
+            p {
+                @include fontStyle(18px, normal, $muli-font, normal, normal);
+                line-height: 1.56;
+                letter-spacing: normal;
+                text-align: center;
+                color: $secondary-font-color;
+
+                span {
+                    color: $gray-color;
+                    font-size: 16px;
+                }
+            }
+
+            .btn-primary {
+                @include buttonStyle(146.6px, 40.9px, #ffba43, 5px, 1px solid $seventh-font-color, $muli-font);
+
+                &:hover {
+                    background-color: $primary-button-bg-color;
+                    border: 1px solid $seventh-font-color;
+                    color: $seventh-font-color
+                }
+            }
+        }
+    }
+}

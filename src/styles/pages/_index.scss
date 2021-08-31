@@ -1,0 +1,1141 @@
+@import "./__home.scss";
+@import "./media-queries.scss";
+@import "./variables.scss";
+@import "./mixins.scss";
+
+button,
+input,
+textarea {
+  outline: none !important;
+}
+
+.main-section {
+  position: relative;
+  background-color: black;
+  height: 105vh;
+  min-height: 30rem;
+  padding-top: 80px;
+  width: 100%;
+  overflow: hidden;
+
+  &.video-480p {
+    height: 60vh;
+
+    .home-video {
+      top: 60%;
+    }
+  }
+  &.video-720p {
+    .home-video {
+      top: 50%;
+    }
+  }
+
+  .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.3;
+    z-index: 1;
+  }
+
+  video,
+  .home-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .vjs-loading-spinner {
+    &:after,
+    span {
+      display: none;
+    }
+  }
+
+  .text-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  @include break-point-lower-than(992px) {
+    height: 644px;
+  }
+
+  .text-center {
+    @include break-point-lower-than(992px) {
+      top: 45%;
+    }
+
+    @include break-point-range(993px, 1440px) {
+      top: 55%;
+    }
+  }
+}
+
+//inspire bike section
+.inspire-bike-section {
+  padding: 131px 0 28px 0;
+  text-align: left;
+
+  @include break-point-lower-than(768px) {
+    padding: 62px 0 50px 0;
+  }
+
+  .mobile-inspire-section {
+    p:nth-child(1) {
+      line-height: 1.67;
+      @include fontStyle(23px, 500, $muli-font, normal, normal);
+
+      @include break-point-lower-than(768px) {
+        size: 23px;
+      }
+    }
+
+    p:nth-child(2) {
+      line-height: 1.67;
+      padding-bottom: 22px;
+      padding-top: 22px;
+      @include fontStyle(18px, normal, $muli-font, normal, normal);
+
+      @include break-point-lower-than(768px) {
+        size: 23px;
+      }
+    }
+  }
+
+  .desktop-inspire-section {
+    .col-md-6:last-child {
+      padding-right: 100px;
+    }
+  }
+
+  @include break-point-lower-than(576px) {
+    text-align: center;
+  }
+
+  .btn-primary {
+    @include buttonStyle(
+      151px,
+      49px,
+      $secondary-button-bg-color,
+      5px,
+      1px solid $eighth-font-color,
+      $muli-font
+    );
+    @include fontStyle(15px, 800, $muli-font, normal, normal);
+    line-height: 2.33;
+    letter-spacing: 0.53px;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include break-point-lower-than(991px) {
+      width: 258px;
+      height: 48px;
+    }
+
+    &:hover {
+      background-color: $primary-button-bg-color;
+      color: $eighth-font-color;
+      border: 1px solid $eighth-font-color;
+    }
+  }
+
+  h3 {
+    @include fontStyle(50px, 500, $muli-font, normal, normal);
+    line-height: 1.34;
+    letter-spacing: normal;
+    text-align: left;
+    margin: 0;
+    padding-bottom: 13px;
+    padding-top: 65px;
+
+    @include break-point-lower-than(576px) {
+      text-align: center;
+      font-size: 32px;
+    }
+
+    @include break-point-lower-than(768px) {
+      padding-top: 0;
+      padding-bottom: 25px;
+    }
+  }
+
+  p:nth-child(2) {
+    padding-bottom: 22px;
+    @include fontStyle(25px, 600, $muli-font, normal, normal);
+
+    @include break-point-lower-than(576px) {
+      text-align: center;
+      font-size: 18px;
+    }
+
+    line-height: 1.67;
+    letter-spacing: normal;
+    margin: 0;
+    padding-bottom: 22px;
+  }
+
+  p:nth-last-child(2) {
+    padding-bottom: 22px;
+    margin: 0;
+    @include fontStyle(18px, normal, $muli-font, normal, normal);
+
+    @include break-point-lower-than(576px) {
+      text-align: center;
+      font-size: 23px;
+    }
+
+    line-height: 1.67;
+    letter-spacing: normal;
+  }
+}
+
+.streaming-home-section {
+  background-image: url(../images/home/classestabmodel.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+  background: {
+    size: cover;
+    repeat: no-repeat;
+    position: center center;
+  }
+
+  height: 756px;
+
+  @include break-point-lower-than(576px) {
+    height: 500px;
+  }
+
+  .card {
+    width: 319px;
+    margin-left: 62px;
+    background-color: #f4f5fb;
+    position: relative;
+    top: -28px;
+    -webkit-box-shadow: -10px 20px 30px 0px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: -10px 20px 30px 0px rgba(0, 0, 0, 0.36);
+    box-shadow: -10px 20px 30px 0px rgba(0, 0, 0, 0.36);
+    border: 0;
+    padding: 81px 22px 62px 22px;
+    border-radius: 0;
+
+    @include break-point-lower-than(576px) {
+      top: 79%;
+      margin-left: 0;
+      width: 100%;
+    }
+
+    .gatsby-image-wrapper {
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
+
+    .card-body {
+      padding: 0;
+
+      p {
+        @include fontStyle(25px, 500, $muli-font, normal, normal);
+        line-height: 1.52;
+        letter-spacing: normal;
+        color: $secondary-font-color;
+
+        @include break-point-lower-than(320px) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+//top-studios-section
+
+.top-studios-section {
+  padding: 100px 0 100px 0;
+
+  @include break-point-lower-than(576px) {
+    padding-bottom: 60px;
+    padding-top: 50px;
+  }
+
+  .slick-arrow {
+    display: none !important;
+  }
+
+  .display {
+    .slick-slide {
+      .gatsby-image-wrapper {
+        z-index: -1;
+        margin: 1.43rem;
+
+        @include break-point-lower-than(768px) {
+          margin: 0.94rem;
+        }
+      }
+    }
+  }
+
+  .slider {
+    margin-top: 3rem;
+    position: relative;
+    @include break-point-lower-than(991px) {
+      margin-top: 4rem;
+    }
+
+    .slick-slide {
+      .gatsby-image-wrapper {
+        width: 85%;
+        border-radius: 10%;
+      }
+    }
+
+    .left-shadow {
+      position: absolute;
+      width: 20px;
+      top: -5px;
+      bottom: 0;
+      box-shadow: 8px 0px 5px 0px white;
+      left: -20px;
+      right: 0;
+      z-index: 99999;
+    }
+
+    .right-shadow {
+      position: absolute;
+      width: 20px;
+      top: -5px;
+      bottom: 0;
+      box-shadow: -8px 0px 5px 0px white;
+      right: -20px;
+      z-index: 99999;
+    }
+  }
+
+  .dpImage {
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    margin-bottom: 0;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  h3 {
+    padding-top: 33px;
+    @include fontStyle(50px, 500, $muli-font, normal, normal);
+    line-height: 1.19;
+    letter-spacing: normal;
+    color: $secondary-font-color;
+    margin: 0;
+    padding-bottom: 31px;
+
+    @include break-point-lower-than(768px) {
+      font-size: 32px;
+      text-align: center;
+    }
+  }
+
+  p {
+    @include fontStyle(18px, normal, $muli-font, normal, normal);
+
+    .dpImage {
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+      position: absolute;
+      bottom: 30%;
+      margin-bottom: 0;
+    }
+  }
+
+  .top-studios-btn {
+    .btn-primary {
+      @include fontStyle(15px, 800, $muli-font, normal, normal);
+      @include buttonStyle(
+        151px,
+        48px,
+        $third-button-bg-color,
+        5px,
+        1px solid $fifth-font-color,
+        $muli-font
+      );
+      line-height: 2.33;
+      letter-spacing: 0.53px;
+      text-align: center;
+      text-transform: uppercase;
+
+      @include break-point-lower-than(991px) {
+        width: 258px;
+        height: 48px;
+      }
+
+      &:hover {
+        background-color: $primary-button-bg-color;
+        color: $fifth-font-color;
+        border: 1px solid $fifth-font-color;
+      }
+    }
+
+    @include break-point-lower-than(576px) {
+      text-align: center;
+    }
+  }
+
+  h3 {
+    @include fontStyle(50px, 600, $muli-font, normal, normal);
+    line-height: 1.08;
+    letter-spacing: normal;
+    color: $secondary-font-color;
+    margin: 0;
+    padding-bottom: 30px;
+
+    @include break-point-lower-than(576px) {
+      font-size: 32px;
+      text-align: center;
+    }
+  }
+
+  p {
+    @include fontStyle(18px, normal, $muli-font, normal, normal);
+    line-height: 1.67;
+    letter-spacing: normal;
+    color: $secondary-font-color;
+    margin: 0;
+    padding-bottom: 30px;
+
+    @include break-point-lower-than(768px) {
+      text-align: center;
+      padding-bottom: 15px;
+    }
+
+    .btn-primary {
+      @include fontStyle(15px, 800, $muli-font, normal, normal);
+      @include buttonStyle(
+        151px,
+        48px,
+        $third-button-bg-color,
+        5px,
+        1px solid $fifth-font-color,
+        $muli-font
+      );
+      line-height: 2.33;
+      letter-spacing: 0.53px;
+      text-align: center;
+      color: $primary-font-color;
+      text-transform: uppercase;
+
+      @include break-point-lower-than(576px) {
+        width: 70%;
+      }
+
+      &:hover {
+        border: 1px solid $fifth-font-color;
+        color: $fifth-font-color;
+        background-color: $primary-button-bg-color;
+      }
+    }
+  }
+}
+
+// feel-difference-section
+.feel-different-section {
+  padding-top: 80px;
+
+  .feel-diferent-mobile {
+    .d-mobile-none {
+      margin-top: 20px !important;
+    }
+  }
+  .feel-diferent-desktop {
+    img {
+      margin-bottom: 0;
+    }
+    .card-icon {
+      height: 5rem;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @include break-point-lower-than(992px) {
+    padding-top: 50px;
+    .feel-different-mobile {
+      display: block;
+    }
+
+    .feel-diferent-desktop {
+      display: none;
+    }
+  }
+
+  @include break-point-lower-than(767px) {
+    padding: 180px 0 0px 0;
+  }
+  @include break-point-lower-than(360px) {
+    padding: 240px 0 0px 0;
+  }
+
+  .card {
+    border: 0;
+
+    .card-body {
+      padding: 0;
+    }
+
+    @include break-point-lower-than(576px) {
+      padding-bottom: 30px;
+    }
+
+    .gatsby-image-wrapper {
+      margin: 0 auto;
+      margin-bottom: 28px;
+    }
+
+    h5 {
+      @include fontStyle(18px, bold, $muli-font, normal, normal);
+      line-height: 1.67;
+      letter-spacing: normal;
+      text-align: center;
+      color: $secondary-font-color;
+
+      @include break-point-lower-than(768px) {
+        font-size: 18px;
+        line-height: 1.19;
+      }
+    }
+
+    p {
+      @include fontStyle(18px, normal, $muli-font, normal, normal);
+      padding-right: 20px;
+      padding-left: 20px;
+      line-height: 1.67;
+      letter-spacing: normal;
+      text-align: center;
+      color: $secondary-font-color;
+    }
+  }
+
+  h3 {
+    @include fontStyle(50px, 500, $muli-font, normal, normal);
+    line-height: 1.08;
+    letter-spacing: normal;
+    color: $secondary-font-color;
+    padding-bottom: 61px;
+
+    @include break-point-lower-than(576px) {
+      font-size: 32px;
+    }
+  }
+
+  h5 {
+    @include fontStyle(38px, 500, $muli-font, normal, normal);
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 1.26;
+    letter-spacing: normal;
+    text-align: center;
+    color: $secondary-font-color;
+
+    @include break-point-lower-than(768px) {
+      font-size: 32px;
+      line-height: 1.19;
+    }
+  }
+}
+
+// enjoy-bike-section
+.enjoy-bike-section {
+  background-image: url(../images/home/the-bike-img-7.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+  background: {
+    size: cover;
+    repeat: no-repeat;
+    position: center center;
+  }
+
+  height: 800px;
+
+  @include break-point-lower-than(576px) {
+    height: 500px;
+  }
+  .text-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  @include break-point-lower-than(992px) {
+    height: 644px;
+  }
+
+  .text-center {
+    @include break-point-lower-than(992px) {
+      top: 45%;
+    }
+
+    @include break-point-range(993px, 1440px) {
+      top: 55%;
+    }
+
+    h1 {
+      @include fontStyle(60px, 500, $muli-font, normal, normal);
+      line-height: 1.25;
+      letter-spacing: normal;
+
+      @include break-point-lower-than(576px) {
+        font-size: 30px;
+        line-height: 1;
+      }
+    }
+  }
+}
+
+// bike-pieces-section
+.bike-pieces-section {
+  padding: 79px 0 83px 0;
+
+  background: {
+    repeat: no-repeat;
+    position: center center;
+  }
+
+  .bike-pieces-mobile {
+    .d-img-none {
+      img {
+        margin: 0;
+        padding-bottom: 22px;
+      }
+    }
+  }
+
+  @include break-point-lower-than(576px) {
+    padding: 50px 0 66px 0;
+  }
+
+  ul {
+    display: flex;
+    margin: 0;
+    padding-bottom: 20px;
+
+    li {
+      margin: 0;
+      @include fontStyle(18px, normal, $muli-font, normal, normal);
+      line-height: 1.22;
+      letter-spacing: normal;
+      text-align: left;
+      color: #707070;
+    }
+  }
+
+  .d-img-none {
+    @include break-point-lower-than(991px) {
+      display: none;
+    }
+  }
+}
+
+// specific-bike-section
+
+.specific-bike-section {
+  padding: 0 0 83px 0;
+
+  @include break-point-lower-than(992px) {
+    .specific-bike-mobile {
+      display: block;
+    }
+
+    .specific-bike-desktop {
+      display: none;
+    }
+  }
+
+  .card {
+    border: 0;
+
+    @include break-point-lower-than(576px) {
+      padding-bottom: 30px;
+    }
+
+    .card-body {
+      padding: 0;
+    }
+
+    .gatsby-image-wrapper {
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 25.2px;
+    }
+
+    h5 {
+      @include fontStyle(18px, bold, $muli-font, normal, normal);
+      line-height: 1.67;
+      letter-spacing: normal;
+      text-align: center;
+      color: $secondary-font-color;
+    }
+
+    p {
+      @include fontStyle(18px, normal, $muli-font, normal, normal);
+      padding-right: 20px;
+      padding-left: 20px;
+      line-height: 1.67;
+      letter-spacing: normal;
+      text-align: center;
+      color: $secondary-font-color;
+    }
+  }
+
+  h5 {
+    @include fontStyle(38px, 500, $muli-font, normal, normal);
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 1.26;
+    letter-spacing: normal;
+    text-align: center;
+    color: $secondary-font-color;
+
+    @include break-point-lower-than(768px) {
+      font-size: 32px;
+      line-height: 1.19;
+      padding-bottom: 0px;
+      margin: 0;
+    }
+  }
+}
+
+// content-partners-section
+
+.content-partners-section {
+  .mobile-content-partners {
+    background-image: url(../images/home/content-partners-mobile-img.png);
+    padding: 61px 0 61px 0;
+    color: $primary-font-color;
+    background-position: 31% 0%;
+
+    h3 {
+      @include fontStyle(32px, 500, $muli-font, normal, normal);
+      line-height: 1.06;
+      letter-spacing: normal;
+      text-align: center;
+      color: $primary-font-color;
+    }
+  }
+
+  .slick-dots li button {
+    display: none;
+  }
+
+  .mobile-slider-content-partners {
+  }
+
+  .slick-arrow {
+    display: none !important;
+  }
+
+  .slick-slide {
+    padding: 40px 0 115px 0;
+  }
+
+  .container-fluid {
+    padding: 0 !important;
+  }
+
+  .slide {
+    @include break-point-lower-than(991px) {
+      display: none;
+    }
+  }
+
+  .slick-initialized {
+    z-index: 1 !important;
+  }
+
+  ul {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+    li {
+      list-style-type: none;
+      font-family: $muli-font;
+    }
+  }
+
+  .carousel-inner {
+    overflow: visible;
+    height: 735px;
+  }
+
+  .carousel-item {
+    .backgroundContentImg {
+      height: 735px;
+      object-fit: cover;
+    }
+  }
+
+  .carousel-caption {
+    position: absolute;
+    left: 50%;
+    top: 57%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    bottom: -6%;
+
+    padding: {
+      top: 20px;
+      bottom: 20px;
+    }
+
+    color: $primary-font-color;
+    text-align: left;
+
+    h3 {
+      @include fontStyle(45px, 500, $muli-font, normal, normal);
+      position: relative;
+      left: -16%;
+      line-height: 1.08;
+      letter-spacing: normal;
+      text-align: left;
+      color: $primary-font-color;
+      padding-bottom: 12px;
+    }
+
+    @include break-point-lower-than(320px) {
+      width: 100%;
+      right: 0;
+      left: 0;
+    }
+
+    ul {
+      margin: 0;
+    }
+
+    h5 {
+      @include fontStyle(30px, 500, $muli-font, normal, normal);
+      line-height: 1.08;
+      letter-spacing: normal;
+      text-align: left;
+      color: $primary-font-color;
+    }
+
+    .studioName {
+      @include fontStyle(38px, 500, $muli-font, normal, normal);
+      line-height: 1.26;
+      position: relative;
+      left: -20px;
+      letter-spacing: normal;
+      text-align: left;
+      color: $sixth-font-color;
+    }
+
+    @include break-point-lower-than(768px) {
+      display: block !important;
+      bottom: -7%;
+
+      h5 {
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+        position: relative;
+        top: 63px;
+      }
+    }
+  }
+
+  .carousel-inner {
+    overflow: visible;
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      width: 57px;
+      height: 40px;
+      bottom: -25%;
+      position: relative;
+      opacity: 1 !important;
+      z-index: 111 !important;
+    }
+  }
+
+  .carousel-indicators {
+    display: none;
+  }
+
+  .card {
+    background-color: $secondary-bg-color !important;
+    border: 0 !important;
+    position: relative !important;
+    top: -64px !important;
+    border-radius: 0 !important;
+    z-index: 1 !important;
+    width: 396px !important;
+    right: 30px;
+    margin: 0 auto !important;
+    border-radius: 0 !important;
+    box-shadow: -10px 20px 30px 0 rgba(80, 87, 139, 0.24) !important;
+    border: 0 !important;
+
+    .classPassImg {
+      width: 31px !important;
+      height: 24px !important;
+    }
+
+    ul {
+      display: flex;
+      margin: 0;
+      justify-content: center;
+    }
+
+    .gatsby-image-wrapper {
+      margin: 0 auto;
+      margin-top: 12px;
+      margin-bottom: 24px;
+      overflow: inherit !important;
+    }
+
+    img {
+      width: 105px;
+      height: 90px;
+      margin: 0 auto;
+      margin-top: 12px;
+      margin-bottom: 24px;
+    }
+
+    .card-body {
+      padding-top: 0;
+      border: 0;
+      border-radius: 0;
+
+      .container {
+        padding: 0;
+      }
+
+      img {
+        width: 58px;
+        height: 24px;
+        border-radius: 0;
+      }
+
+      h2 {
+        @include fontStyle(36px, normal, $muli-font, normal, normal);
+        line-height: 0.6;
+        letter-spacing: normal;
+        text-align: center;
+        color: $primary-font-color;
+      }
+
+      i {
+        width: 10px;
+        height: 9.5px;
+        color: $seventh-font-color;
+        font-size: 13px;
+      }
+    }
+
+    .card-footer {
+      background-color: $primary-bg-color !important;
+      border: 0;
+      height: 280px;
+      border-radius: 0;
+      padding: 15.9px 26px 42.1px 27px;
+
+      img {
+        border-radius: 0 !important;
+        background-color: transparent !important;
+        height: 35px !important;
+        width: 35px !important;
+        top: 0 !important;
+      }
+
+      h6 {
+        @include fontStyle(15px, bold, $muli-font, normal, normal);
+        line-height: 2.33;
+        letter-spacing: 0.53px;
+        text-align: left;
+        color: $fourth-font-color !important;
+      }
+    }
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    z-index: 111 !important;
+    width: 69%;
+    bottom: 77%;
+  }
+
+  .carousel-control-prev-icon {
+    background-image: url("../images/home/prev.png") !important;
+    width: 57px;
+    height: 40px;
+    opacity: 1 !important;
+    z-index: 111 !important;
+
+    @include break-point-lower-than(991px) {
+      display: none;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .carousel-control-next-icon {
+    background-image: url("../images/home/next.png") !important;
+    width: 57px;
+    height: 40px;
+    opacity: 1 !important;
+    z-index: 111 !important;
+
+    @include break-point-lower-than(991px) {
+      display: none;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .card .card-footer {
+    i {
+      color: $tenth-font-color;
+      font-size: 25px;
+      margin-left: 20px;
+    }
+
+    p {
+      @include fontStyle(18px, normal, $muli-font, normal, normal);
+      line-height: 1.56;
+      letter-spacing: normal;
+      color: $secondary-font-color !important;
+
+      span {
+        color: $gray-color !important;
+        font-size: 16px;
+      }
+    }
+
+    .btn-primary {
+      @include buttonStyle(
+        172px,
+        48px,
+        #ffba43,
+        5px,
+        1px solid $seventh-font-color,
+        $muli-font
+      );
+      padding-top: 10px;
+      font-family: $muli-font;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      bottom: 2%;
+
+      &:hover {
+        background-color: $primary-button-bg-color;
+        border: 1px solid $seventh-font-color;
+        color: $seventh-font-color !important;
+      }
+    }
+  }
+
+  .carousel-control-prev-icon {
+    width: 57px;
+    height: 41px;
+    opacity: 1;
+
+    @include break-point-lower-than(991px) {
+      display: none;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .carousel-control-next-icon {
+    width: 57px;
+    height: 41px;
+    opacity: 1;
+
+    @include break-point-lower-than(991px) {
+      display: none;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+// are-you-ready-section
+
+.are-you-ready-section {
+  padding: 102px 0 123px 0;
+
+  @include break-point-lower-than(768px) {
+    padding: 00px 0 61px 0;
+  }
+
+  img {
+    margin: 0;
+  }
+
+  h3 {
+    @include fontStyle(38px, 500, $muli-font, normal, normal);
+    padding-bottom: 20px;
+    line-height: 1.26;
+    letter-spacing: normal;
+    text-align: center;
+    color: $secondary-font-color;
+
+    @include break-point-lower-than(768px) {
+      font-size: 32px;
+      line-height: 1.5;
+    }
+  }
+
+  .btn-primary {
+    @include fontStyle(15px, 800, $muli-font, normal, normal);
+    @include buttonStyle(
+      295px,
+      48px,
+      $secondary-button-bg-color,
+      5px,
+      1px solid $eighth-font-color,
+      $muli-font
+    );
+    line-height: 2.33;
+    letter-spacing: 0.53px;
+    text-align: center;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $primary-button-bg-color;
+      color: $eighth-font-color;
+      border: 1px solid $eighth-font-color;
+    }
+  }
+}

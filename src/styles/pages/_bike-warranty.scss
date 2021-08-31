@@ -1,0 +1,23 @@
+@import "./media-queries.scss";
+@import "./variables.scss";
+@import './mixins.scss';
+
+.bike-warranty-section {
+    padding: 120px 0 120px 0;
+
+    @include break-point-lower-than(991px) {
+        padding: 107px 0 120px 0;
+    }
+
+    p {
+        @include fontStyle(17px, normal, $muli-font, normal, normal);
+
+        span {
+            @include fontStyle(17px, bold, $muli-font, normal, normal);
+        }
+    }
+
+    h4 {
+        @include fontStyle(24px, bold, $muli-font, normal, normal);
+    }
+}

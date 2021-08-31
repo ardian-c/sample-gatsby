@@ -1,0 +1,17 @@
+//font-mixins
+@mixin fontStyle($size, $weight, $family, $style, $stretch) {
+    font-size: $size;
+    font-weight: $weight;
+    font-family: $family;
+    font-style: $style;
+    font-stretch: $stretch;
+}
+
+@mixin buttonStyle($width, $height, $background-color, $border-radius, $border, $font-family) {
+    width: $width;
+    height: $height;
+    background-color: $background-color;
+    border-radius: $border-radius;
+    border: $border;
+    font-family: $font-family;
+}

@@ -1,0 +1,46 @@
+.try-stryde-bg-section {
+    background-image: url(../images/try-stryde/bg.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  
+    background: {
+      size: cover;
+      repeat: no-repeat;
+      position: center center;
+    }
+  
+    height: 800px;
+    
+    @include break-point-lower-than(576px) {
+      height: 500px;
+    }
+    .text-content {
+      position: relative;
+      z-index: 2;
+    }
+  
+    @include break-point-lower-than(992px) {
+      height: 644px;
+    }
+    .text-center {
+        @include break-point-lower-than(992px) {
+            top: 45%;
+        }
+
+        @include break-point-range(993px, 1440px) {
+            top: 55%;
+        }
+
+        h1 {
+            @include fontStyle(60px, 500, $muli-font, normal, normal);
+            line-height: 1.25;
+            letter-spacing: normal;
+
+            @include break-point-lower-than(576px) {
+            font-size: 30px;
+            line-height: 1;
+            }
+        }
+    }
+}

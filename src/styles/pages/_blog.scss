@@ -1,0 +1,42 @@
+@import "./_home.scss";
+@import './media-queries.scss';
+@import './variables.scss';
+
+.blog-section,
+.post-section {
+    padding: 120px 0 120px 0;
+}
+
+.blog-section {
+    h1 {
+        font-size: 45px;
+        font-weight: 500;
+        font-family: $muli-font;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.25;
+        letter-spacing: normal;
+        text-align: center;
+        color: #000000;
+    }
+
+    a {
+        color: #fcb335;
+        font-size: 24px;
+        font-family: $muli-font;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.25;
+        letter-spacing: normal;
+    }
+
+        
+    p {
+        font-size: 20px;
+        font-family: $muli-font;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.25;
+        letter-spacing: normal;
+    }
+}

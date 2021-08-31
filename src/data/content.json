@@ -1,0 +1,241 @@
+{
+  "general": {
+    "customerServiceEmail": "help@strydebike.com"
+  },
+  "header": {},
+  "footer": {},
+  "home": {
+    "meta": {
+      "title": "Home",
+      "faq": "/faq",
+      "keywords": "indoor cycling, indoor cycle, interactive bike, streaming classes, virtual classes, stryde, stryde bike, virtual workouts",
+      "description": "Access indoor cycling classes from country's top studios on an interactive bike in your home"
+    },
+    "addToCartSection": {
+      "button": "Shop bike",
+      "title": "Stryde exercise bike",
+      "description": "Bring home high performance cardio machine with immersive access to Stryde classes and other interactive content",
+      "footNote": "Stryde membership optional at $29.99/mo"
+    },
+    "bikeFeatureSection": {
+      "title": "Cardio workouts from nation’s best",
+      "firstParagraph": {
+        "title": "Workouts that push you",
+        "description": "Performance to beat-based choreography, and classes from beginner riders to advanced riders"
+      },
+      "secondParagraph": {
+        "title": "Nation’s Top Instructors",
+        "description": "We’ve partnered with the country’s most popular cycling studios and independent instructors delivering a wide variety of on and off the bike workouts."
+      },
+      "thirdParagraph": {
+        "title": "Popular Hits to Suit Every Taste",
+        "description": "From latest hits to 80s, trust our instructors will find the beats to get you going"
+      }
+    },
+    "companyTestimonialSection": {
+      "forbes": "“Of all the Peloton competitors, Stryde has the most unique and compellingly different approach”",
+      "businessInsider": "“Is, quite simply, a joy to ride. The design is thoughtful, sleek, and supremely sturdy”",
+      "filtrated": "“Even without a subscription, the Stryde Bike can still be used for training at home. It’s win-win.”",
+      "mensHealth": "“This Interactive Home Cycling Bike Seriously Rivals Peloton”",
+      "enterpreneur": "“Of all the Peloton competitors, Stryde has the most unique and compellingly different approach”"
+    },
+    "featuredAppSection": {
+      "title": "STRYDE DIGITAL APP",
+      "description": "Nation’s top instructors who challenge, encourage and entertain you with the broadest selection of quality on and off the bike workouts that will push your full body.",
+      "callToAction": "START NOW WITH 30 DAY TRIAL",
+      "appStoreLink": "#test",
+      "playStoreLink": "#test"
+    },
+    "mainSection": {
+      "primary": "Train with top fitness studios",
+      "descriptionFirst": "Immersive cardio and strength workouts - on a high performance bike starting at $50 a month.",
+      "descriptionSecond": "Or try Stryde digital app - start now with 14 day trial.",
+      "exploreBikeButton": "explore the bike",
+      "tryAppButton": "try app"
+    },
+    "testimonialSection": {
+      "title": "Testimonials",
+      "testimonials": [
+        {
+          "content": "I love the movements and overall work for my body.",
+          "name": "Jesse K."
+        },
+        {
+          "content": "“SO MUCH ENERGY. I have not found a single class that didn’t give me the energy to push myself.”",
+          "name": "Kara W."
+        },
+        {
+          "content": "“I work a lot harder with Stryde. Big difference”",
+          "name": "Pat H."
+        }
+      ]
+    },
+    "areyoureadySection": {
+      "title": "Are you ready to ride?",
+      "shopBikeBtn": "Shop Bike",
+      "financingContent": "*This example payment based on the listed product price assuming a 36 month term loan and a 9.99% APR. Your terms may vary and are subject to credit approval. Down payment may be required. Rates range from 6.99% to 29.99% APR. Bread® loans are made by Cross River Bank, a New Jersey Chartered Bank, Member FDIC."
+    }
+  },
+  "tryStryde": {
+    "meta": {
+      "title": "Try Stryde",
+      "faq": "/faq",
+      "keywords": "indoor cycling, indoor cycle, interactive bike, streaming classes, virtual classes, stryde, stryde bike, virtual workouts",
+      "description": "Access indoor cycling classes from country's top studios on an interactive bike at your home"
+    },
+    "title": [
+      "Try Stryde.",
+      "Experience our bike",
+      "at a retailer near you"
+    ],
+    "locations": [
+      {
+        "title": "Fitness Showrooms",
+        "address": "40 South Central Ave",
+        "city": "Hartsdale NY 10530"
+      },
+      {
+        "title": "Fitness Showrooms",
+        "address": "667 West Jericho Turnpike",
+        "city": "Huntington NY 11743"
+      },
+      {
+        "title": "Fitness Showrooms",
+        "address": "1215 Northern BLVD",
+        "city": "Manhasset NY 11030"
+      },
+      {
+        "title": "Fitness Showrooms",
+        "address": "135 W. 26th St",
+        "city": "NY NY 10001"
+      },
+      {
+        "title": "Fitness Showrooms",
+        "address": "1930 South Rd",
+        "city": "Poughkeepsie NY 12601"
+      },
+      {
+        "title": "Fitness Showrooms",
+        "address": "315A Sunrise Highway",
+        "city": "Rockville Centre NY 11570"
+      },
+      {
+        "title": "Fitness Showrooms",
+        "address": "586 N. RTE 17",
+        "city": "Paramus NJ 07652"
+      },
+      {
+        "title": "Fitness Showrooms",
+        "address": "508 Main Ave",
+        "city": "Norwalk CT 06851"
+      },
+      {
+        "title": "Fitness Showrooms",
+        "address": "5544 Nicholson LA",
+        "city": "Rockville MD 02852"
+      }, 
+      {
+        "title": "Fitness Showrooms",
+        "address": "11029 Lee Highway",
+        "city": "Fairfax VA 22030"
+      },
+      {
+        "title": "Primo Fitness",
+        "address": "1909 S Susan St",
+        "city": "Santa Ana CA 92704"
+      }
+    ]
+  },
+  "theBike": {
+    "meta": {
+      "title": "The Bike",
+      "faq": "/faq",
+      "keywords": "indoor cycling, indoor cycle, interactive bike, streaming classes, virtual classes, stryde, stryde bike, virtual workouts",
+      "description": "Access indoor cycling classes from country's top studios on an interactive bike at your home"
+    },
+    "prices": {
+      "discountPrice": "$1,595 ",
+      "originalPrice": "$1,745",
+      "discountDetails": "Limited time: $150 off"
+    },
+    "productOrder": {
+      "deliveryTime": "Free delivery in 1-2 weeks",
+      "returnTime": "30 Day return",
+      "warrantyTime": "12 Month warranty"
+    },
+    "features": {
+      "immersive": {
+        "title": "Immersive classes",
+        "content": "Hundreds of workouts in the Stryde app - for optional $29/mo subscription."
+      },
+      "everyOccasion": {
+        "title": "Top of the line specs",
+        "content": "Magnetic resistance system, modern design and 22-inch HD tablet."
+      },
+      "wholeFamily": {
+        "title": "Cardio for the whole family",
+        "content": "Up to four profiles on the Stryde app, each with personal workout history."
+      }
+    },
+    "reviewBikeSection": {
+      "title": [
+        "Best instructors in the country.",
+        "Top of the line performance.",
+        "Access to fitness and media apps."
+      ],
+      "compareButton": "compare to Peloton Bike",
+      "peletonComparison": [
+        {
+          "title": "Studio cycling classes",
+          "stryde": true,
+          "peleton": true
+        },
+        {
+          "title": "Multiple instructional styles",
+          "stryde": true,
+          "peleton": false
+        },
+        {
+          "title": "Leaderboard",
+          "stryde": true,
+          "peleton": true
+        },
+        {
+          "title": "Workout history",
+          "stryde": true,
+          "peleton": true
+        },
+        {
+          "title": "Access to other apps",
+          "stryde": true,
+          "peleton": false
+        },
+        {
+          "title": "Magnetic resistance system",
+          "stryde": true,
+          "peleton": true
+        },
+        {
+          "title": "Cycling shoes optional",
+          "stryde": true,
+          "peleton": false
+        },
+        {
+          "title": "Bike price",
+          "stryde": "$1,645",
+          "peleton": "$1,895"
+        },
+        {
+          "title": "Membership price",
+          "stryde": "$29/mo",
+          "peleton": "$39/mo"
+        },
+        {
+          "title": "Optional membership",
+          "stryde": true,
+          "peleton": false
+        }
+      ]
+    }
+  }
+}

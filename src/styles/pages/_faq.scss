@@ -1,0 +1,127 @@
+@import "./_home.scss";
+@import "./media-queries.scss";
+@import "./variables.scss";
+
+.faq-section {
+  padding: 145px 0 145px 0;
+
+    @include break-point-lower-than(768px) {
+        padding-top: 107px;
+    }
+
+  h1 {
+    @include fontStyle(60px, 500, $muli-font, normal, normal);
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: center;
+    color: $secondary-font-color;
+
+    @include break-point-range(320px, 991px) {
+      font-size: 30px;
+    }
+  }
+
+  p {
+    @include fontStyle(38px, 500, $muli-font, normal, normal);
+    line-height: 1.37;
+    letter-spacing: normal;
+    text-align: center;
+    color: $secondary-font-color;
+
+    @include break-point-range(320px, 991px) {
+      font-size: 18px;
+    }
+
+    span {
+      color: $tenth-font-color;
+      text-decoration: underline;
+    }
+  }
+
+  .faq-questions-section {
+    padding-top: 39px;
+
+    .nav-pills {
+      justify-content: center;
+      margin: 0;
+      background-image: linear-gradient(85deg, #5471ea 35%, #768ce8 84%);
+
+      @include break-point-range(320px, 768px) {
+        display: block;
+      }
+
+      .nav-item {
+        margin-left: 25px;
+        margin-right: 25px;
+
+        .nav-link {
+          @include fontStyle(15px, 500, $muli-font, normal, normal);
+          line-height: 5;
+          letter-spacing: normal;
+          text-align: center;
+          color: #d6d8ff;
+        }
+
+        .active {
+          background-color: transparent !important;
+          border-radius: 0;
+          color: $primary-font-color !important;
+          border-bottom: 5px solid $eighth-font-color !important;
+        }
+      }
+    }
+
+    .panel,
+    .panel-body {
+      box-shadow: none;
+      @include fontStyle(18px, normal, $muli-font, normal, normal);
+      line-height: 1.67;
+      letter-spacing: normal;
+      text-align: left;
+      color: $secondary-font-color;
+    }
+
+    .panel-group .panel-heading {
+      padding: 0;
+
+      a {
+        cursor: pointer;
+        display: block;
+        padding: 15px 0 15px 0;
+        text-decoration: none;
+        position: relative;
+        @include fontStyle(24px, 500, $muli-font, normal, normal);
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: left;
+        color: $secondary-font-color;
+
+        &:after {
+          content: "+";
+          float: right;
+          color: $tenth-font-color;
+        }
+
+        &.collapsed:after {
+          content: "-";
+          color: $tenth-font-color;
+        }
+
+        @include break-point-range(320px, 991px) {
+          font-size: 20px;
+        }
+      }
+      .open {
+        &:after {
+          content: "-";
+        }
+      }
+    }
+  }
+
+  hr {
+    border-top: 1px solid #c9cbff;
+    margin-top: 39px;
+    margin-bottom: 39px;
+  }
+}
