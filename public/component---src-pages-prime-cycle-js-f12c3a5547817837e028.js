@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[20],{"7ukJ":function(a,e,n){"use strict";n.r(e);var t=n("q1tI"),r=n.n(t),c=n("TkH4");e.default=function(a){var e=a.data;return r.a.createElement(c.a,{data:e,partnerId:"primeCycle"})}}}]);
-//# sourceMappingURL=component---src-pages-prime-cycle-js-f12c3a5547817837e028.js.map

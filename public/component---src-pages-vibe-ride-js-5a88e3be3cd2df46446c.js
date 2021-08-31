@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[27],{"n/7F":function(a,n,e){"use strict";e.r(n);var t=e("q1tI"),r=e.n(t),d=e("TkH4");n.default=function(a){var n=a.data;return r.a.createElement(d.a,{data:n,partnerId:"vibeRide"})}}}]);
-//# sourceMappingURL=component---src-pages-vibe-ride-js-5a88e3be3cd2df46446c.js.map
